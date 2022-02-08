@@ -127,6 +127,15 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  if(num1 > num2 || num1 > num3 || num1 > 0){
+    return "Número 1 es mayor y positivo";
+  }else if((num1 || num2 || num3)< 0){
+    return "Hay negativos"
+      }else if(num3 > num1 && num3 > num2){
+return num3 + 1;
+      }else{
+        return false;
+      }
 }
 
 function esPrimo(numero) {
@@ -141,19 +150,33 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+if(valor === false){
+  return "soy falso";
+}else{
+  return "soy verdadero"
+}
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  var tabla = [];
+  for (var i = 0; i < 11; i++) {
+    tabla.push(6 * i)
+}
+return tabla;
+}
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if(numero > 99 && numero < 1000){
+    return true;
+  }else{
+    return false;
+  }
   
 }
 
@@ -161,6 +184,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+ var n = 0;
+var x = 0;
+while (n < 8) {
+  n ++;
+  x += 5;
+}
 }
 
 
