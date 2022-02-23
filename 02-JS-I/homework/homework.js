@@ -172,7 +172,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -183,9 +183,9 @@ function esPositivo(numero) {
   if(numero === 0){
     return false;
   }else if(numero < 0){
-return "es negativo"
+return "Es negativo"
   }else{
-    return "es positivo"
+    return "Es positivo"
   }
 }
 
