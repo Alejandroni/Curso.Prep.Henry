@@ -277,7 +277,7 @@ function continueStatement(numero) {
       continue;
     } else {
       sumaD = sumaD + 2;
-      array.push(suma);
+      array.push(suma); //se mete la quinta iteraccion
     }
   }
   return array;
